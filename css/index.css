@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image:url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.title-container {
+    padding: 3px;
+    margin: 5px auto;
+}
+header{
+    display: flex;
+    left: 0;
+    top:0;
+    right: 0;
+    margin-bottom: 3rem;
+    height:100px;
+    z-index: 151px;
+    box-shadow: 0 5px 10px 0 #9be019;
+    padding: 0;
+    background-color: #00860b;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 1rem;
+    margin: 50px auto;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.445);
+    backdrop-filter: white;
+    box-shadow: 0 5px 10px 0px #aaa;
+    overflow: auto;
+    z-index: 1200;
+    transition: .5s; 
+    
+}
+
+form {
+    margin: 0 2rem;
+}
+
+.form-title {
+
+    color: black;
+    font-size: 2rem;
+    border-bottom: 4px solid rgba(228, 17, 17, 0.5);
+    text-align: center;
+    padding: 3px;
+    margin: 5px;
+}
+
+.f-title {
+    font-family: Copperplate;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+    text-shadow: 0 5px 10px 0px #eef362;
+    
+}
+
+input {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #030303;
+    padding-left: 1.5rem;
+    font-size: 15px;
+}
+
+.input-group-prof{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.input-group i {
+    position:absolute;
+    color: black;
+}
+
+
+input:focus {
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+label {
+    color: #000;
+    position: relative;
+    left: 1.2em;
+    top: -1.3em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    color: hsl(138, 87%, 18%);
+    font-size: 15px;
+    filter: blur(5px);
+}
+.recover {
+    text-align: right;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.recover a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.recover a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: rgba(1, 31, 8, 0.712);
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.btn:hover {
+    background-color: rgba(10, 233, 66, 0.5);
+    text-decoration-color: black;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+}
+
+button {
+    color: rgba(2, 53, 15, 0.541);
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    text-decoration: underline;
+    color: blue;
+}
